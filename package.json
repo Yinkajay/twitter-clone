@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.4.1",
+    "bcrypt": "^5.1.1",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
@@ -16,6 +18,7 @@
     "zustand": "^4.4.3"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -23,6 +26,7 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "postcss": "^8.4.31",
+    "prisma": "^5.4.1",
     "tailwindcss": "^3.3.3",
     "typescript": "latest"
   }

@@ -34,7 +34,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, onSubmit, title, body, f
 
   return (
     <>
-      <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-neutral-500 bg-opacity-70">
+      <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-neutral-500 bg-opacity-50">
         <div className="relative w-full lg:w-3/6 my-6 h-full mx-auto lg:h-auto">
           {/* Content */}
           <div className="h-full lg:h-auto border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-black outline-none focus:outline-none">
@@ -52,6 +52,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, onSubmit, title, body, f
             {/* Footer */}
             <div className="flex flex-col gap-2 p-10">
               <Button disabled={disabled} label={actionLabel} secondary fullWidth onClick={handleSubmit}/>
+              {footer}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import Input from '@/components/Input'
 import Modal from '@/components/Modal'
 import useLoginModal from '@/hooks/useLoginModal'
 import useRegisterModal from '@/hooks/useRegisterModal'
+import axios from 'axios'
 import React, { useState, useCallback } from 'react'
 
 const RegisterModal = () => {
@@ -18,6 +19,8 @@ const RegisterModal = () => {
         try {
             setIsLoading(true)
             // TODO REGISTER AND LOGIN
+
+            await axios.post('/api/register')
             registerModal.onClose()
         } catch (error) {
             console.log(error)
